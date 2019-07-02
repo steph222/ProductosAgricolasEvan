@@ -124,7 +124,7 @@ textarea{
     text-shadow: 2px 1px white;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:1080px){
     .info1{
         display: flex;
         margin: 0px;
