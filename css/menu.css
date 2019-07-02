@@ -1,0 +1,117 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+}
+
+header{
+
+	width: 100%;
+	background:#2A2123;
+	justify-content: center;
+	position: fixed;
+	z-index: 1000;
+	top:0;
+}
+
+
+#logoo{
+	background: #000;
+	margin: 60px 0px;
+}
+.logo img{
+
+	margin:auto;
+	display: flex;
+}
+.logo{
+	background: #000;
+	margin: 10px;
+}
+
+
+
+#btn-menu{
+	display: none;
+}
+
+/**
+boton menu
+**/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+/* agrego que el cursor cambie a manito cuando esta
+encima del boton y que cambie de color*/
+
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.5);
+}
+
+/*menú normal*/
+
+.menu ul{
+
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	box-shadow: 1px 2px 5px #fff;
+	
+}
+
+.menu li{
+	border-right: 1px solid #fff;
+}
+
+.menu li{
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color:#fff;
+	text-decoration: none;
+}
+
+
+/*Generar el cambio de tamaño*/
+@media (max-width: 768px){
+
+	header label{
+		display: block;
+	}
+
+	.menu{
+		position: absolute;
+		background: #2A2123;
+		width: 70%;
+		margin-left: -70%; 
+		transition: all 1s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+
+	.menu li{
+		border-top: 1px solid #fff;
+
+	}
+
+	/*Aparezca cuando se da clic*/
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+}

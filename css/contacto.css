@@ -1,0 +1,155 @@
+form{
+    width: 450px;
+    margin: auto;
+    background:black;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#boton{
+    background: #31384a;
+    color:#fff;
+    padding: 10px;
+    box-shadow: 1px 2px #fff;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+#info{
+    background: #fff; /*cAMBIABLE A GUSTO DE ELLOS*/
+    color: #000;
+    text-align: center;
+    padding: 20px
+}
+#info .letra{
+    font-size: 20px;
+}
+#info h4 img{
+    width: 40px;
+    height: 30px;
+    align-content: center;
+    margin: 10px;
+    position: relative;
+    bottom: -15px;
+}
+
+#mensaje{
+    background: #fff; /*cAMBIABLE A GUSTO DE ELLOS*/
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 50px 136px
+}
+
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info1{
+    display: flex;
+    margin: 20px;
+    padding: 20px 50px
+}
+
+.mario{
+    display: flex;
+    margin: 20px;
+    padding: 20px 50px
+}
+
+.mapa{
+    display: flex;
+    margin: 20px;
+    padding: 20px 0px
+}
+
+.info1 .imagenes{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #999;
+    
+}
+.info1 .mario .imagenes{
+    width: 180px;
+    height: 180px;
+    border: 7px solid #999;
+    
+}
+.info1 h4{
+    margin: -10px 10px;
+    background: black;
+    border-left: 2px solid #2bde07 ;
+  
+}
+.ruta{
+    color: black;
+    margin: 10px;
+    text-shadow: 2px 1px white;
+}
+
+@media screen and (max-width:768px){
+    .info1{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+    }
+    .info1 h4{
+        font-size: 10px
+            
+    }
+    .mario{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        position: relative;
+        left: -60px
+    
+    }
+    
+    .mario h4{
+        padding: 10px 40px 5px 10px
+    }
+    .mapa{
+        margin: auto;
+        width: 100%;
+    }
+    
+}
+
