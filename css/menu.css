@@ -87,7 +87,7 @@ header label:hover{
 
 
 /*Generar el cambio de tamaño*/
-@media (max-width: 1080px){
+@media screen and (max-width:1024px) and (min-width:640px) {
 
 	header label{
 		display: block;
